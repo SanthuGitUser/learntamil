@@ -1,0 +1,56 @@
+.panel {
+  padding: 1rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--accent-glow);
+  border-radius: var(--radius);
+}
+
+.label {
+  margin: 0 0 0.35rem;
+  font-size: var(--font-ui-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.line {
+  margin: 0 0 0.35rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-size: var(--font-en-prominent);
+}
+
+.tamil {
+  font-weight: 600;
+}
+
+.sep {
+  color: var(--text-muted);
+  font-size: var(--font-ui-body);
+}
+
+.en {
+  color: var(--text);
+  font-weight: 600;
+  font-size: var(--font-en-gloss);
+}
+
+.meta {
+  margin: 0;
+  font-size: var(--font-ui-small);
+  color: var(--text-muted);
+}
+
+.placeholder {
+  margin: 0;
+  padding: 1rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  color: var(--text-muted);
+  font-size: var(--font-ui-lead);
+  text-align: center;
+}

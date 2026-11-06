@@ -1,0 +1,6 @@
+node_modules
+dist
+*.local
+
+# Large downloaded CC images for chart words (regenerate with npm run fetch-word-illustrations)
+public/word-illustrations/

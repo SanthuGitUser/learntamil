@@ -1,0 +1,81 @@
+.panel {
+  position: sticky;
+  top: 5.5rem;
+  padding: 1rem 1.1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--accent-glow);
+  border-radius: var(--radius);
+  min-height: 12rem;
+}
+
+.label {
+  margin: 0 0 0.35rem;
+  font-size: var(--font-ui-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.glyphRef {
+  margin: 0 0 0.35rem;
+  font-size: 2.5rem;
+  line-height: 1;
+  color: var(--text);
+  text-align: center;
+}
+
+.meta {
+  margin: 0 0 0.75rem;
+  font-size: var(--font-ui-lead);
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.note {
+  margin: 0 0 0.65rem;
+  font-size: var(--font-ui-body);
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.figure {
+  margin: 0;
+}
+
+.guideImg {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #fafaf8;
+}
+
+.caption {
+  margin: 0.45rem 0 0;
+  text-align: center;
+  font-size: var(--font-ui-small);
+  color: var(--text-muted);
+}
+
+.code {
+  font-size: var(--font-ui-body);
+  color: var(--accent);
+}
+
+.placeholder {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: var(--font-ui-lead);
+  line-height: 1.45;
+  text-align: center;
+  padding: 1rem 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .panel {
+    position: static;
+  }
+}
