@@ -4,9 +4,10 @@ let currentAudio: HTMLAudioElement | null = null;
 
 /** Bundled MP3 path when we have pre-generated Tamil speech. */
 export function getLetterAudioUrl(letter: Pick<Letter, "id">): string | undefined {
-  if (letter.id.startsWith("v-")) return `/audio/vowels/${letter.id}.mp3`;
-  if (letter.id.startsWith("c-")) return `/audio/consonants/${letter.id}.mp3`;
-  if (letter.id.includes("-v-")) return `/audio/uyirmei/${letter.id}.mp3`;
+  const base = import.meta.env.BASE_URL;
+  if (letter.id.startsWith("v-")) return `${base}audio/vowels/${letter.id}.mp3`;
+  if (letter.id.startsWith("c-")) return `${base}audio/consonants/${letter.id}.mp3`;
+  if (letter.id.includes("-v-")) return `${base}audio/uyirmei/${letter.id}.mp3`;
   return undefined;
 }
 

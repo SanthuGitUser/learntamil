@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
+    "postbuild": "node scripts/copy-github-pages-404.mjs",
     "preview": "vite preview",
     "generate-audio": "python scripts/generate-audio.py",
     "extract-write-guides": "python scripts/extract-write-guides-from-pdf.py",
